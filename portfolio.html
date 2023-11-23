@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>homework #6</title>
+    <title>homework #7</title>
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,71 +17,130 @@
     <link rel="stylesheet" href="css/style.css" />
 
 </head>
-
-<body>
-    <!--start of the header tag-->
-    <header class="container header">
-
-        <div class="main-header-container">
-            <a class="logo links" href="index.html"><span>WEB</span>STUDIO</a>
+<header class="header desktop-nav">
+    <div class="container header-container">
+        <div class="d-flex">
+            <a href="#" class="logo link"> <span class="logo-web">Web</span><span class="logo-studio-nav">studio</span>
+            </a>
             <nav>
-                <ul class="menu-main menu">
+                <ul class="list">
                     <li>
-                        <a class="menu1 links"
-                            href="index.html">Studio</a>
+                        <a href="index.html" class="link nav-link">Studio</a>
                     </li>
                     <li>
-                        <a class="menu2 links active" href="portfolio.html">Portfolio</a>
+                        <a href="portfolio.html" class="link nav-link active">Portfolio</a>
                     </li>
                     <li>
-                        <a class="menu3 links"
-                            href="https://www.figma.com/file/B1m2uk25m1eAgroESAuM2g/Web-Studio-(Version-3.0)?type=design&node-id=0-1&mode=design&t=raKnELDXutW6jLfi-0">Contacts</a>
+                        <a href="" class="link nav-link">Contact</a>
                     </li>
                 </ul>
             </nav>
         </div>
-        <ul class="menu-contact menu">
+        <ul class="desktop-contacts">
             <li>
-                <a class="contact1 links"
-                    href="https://kateryna-vyshnevetska.github.io/project-WebStudio/">info@devstudio.com</a>
+                <a href="" class="link contacts">info@devstudio.com </a>
             </li>
             <li>
-                <a class="contact2 links" href="tel:+11(000)1111111">+11 (000) 111-11-11</a>
+                <a href="" class="link contacts">+11 (000) 111-11-11 </a>
             </li>
         </ul>
+    </div>
+</header>
 
-    </header>
-<!--end of the header tag-->
-    <main>
-        <section class="portmain container">
-            <div class="portbutton">
-                <button type="button" class="click">All</button>
-                <button type="button" class="click">Website</button>
-                <button type="button" class="click">App</button>
-                <button type="button" class="click">Design</button>
-                <button type="button" class="click">Marketing</button>
-            </div>
-            <div class="container">
-                <ul class="customer-links">
-                    <li class="project-portfolio">
-                        <div class="project-img">
-                           <img src="./images/img (4).jpg" alt="appinterface" class="port-img">
-                           <div class="project-img-caption">
-                                <p>
-                                    14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
-                                    Cloud Storage App
-                                </p>
-                           </div>
-                        </div>
-                        <div class="project-caption">
-                            <h3>Banking App Interface Concept</h3>
-                            <p>App</p>
-                        </div>
+<header class="mobile-nav">
+    <div class="container mobile-container">
+        <a href="" class="logo link"> <span class="logo-web">Web</span><span class="logo-studio-nav">studio</span> </a>
+        <svg width="32" height="22" class="js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <use href="./images/icons.svg#hamburger"></use>
+        </svg>
+    </div>
+</header>
+<div class="js-menu-container mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-container">
+        <button class="js-close-menu">
+            <svg width="18" height="18">
+                <use href="./images/icons.svg#close"></use>
+            </svg>
+        </button>
+        <nav class="mobile-navbar">
+            <ul class="mobile-links">
+                <li>
+                    <a class="mobile-link mobile-active" href="index.html">Studio</a>
+                </li>
+                <li>
+                    <a class="mobile-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li>
+                    <a class="mobile-link" href="">Contacts</a>
+                </li>
+            </ul>
+            <div>
+                <ul class="mobile-links">
+                    <li>
+                        <a class="mobile-link mobile-active" href="">11 (000) 111-11-11</a>
                     </li>
-                    <li class="project-portfolio">
-                        <div class="project-img">
+                    <li>
+                        <a href="" class="mobile-contact">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <div class="team-socials">
+                    <a class="team-socials-icon">
+                        <svg width="16" height="16">
+                            <use href="./images/icons.svg#instagram-2"></use>
+                        </svg>
+                    </a>
+                    <a class="team-socials-icon">
+                        <svg width="16" height="16">
+                            <use href="./images/icons.svg#twitter-1"></use>
+                        </svg>
+                    </a>
+                    <a class="team-socials-icon">
+                        <svg width="16" height="16">
+                            <use href="./images/icons.svg#linkedin-1"></use>
+                        </svg>
+                    </a>
+                    <a class="team-socials-icon">
+                        <svg width="16" height="16">
+                            <use href="./images/icons.svg#facebook"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<main>
+    <section class="projects">
+        <div class="container">
+        <div class="portbutton">
+            <button type="button" class="click">All</button>
+            <button type="button" class="click">Website</button>
+            <button type="button" class="click">App</button>
+            <button type="button" class="click">Design</button>
+            <button type="button" class="click">Marketing</button>
+        </div>
+        </div>
+        <div class="container">
+            <ul class="list">
+                <li class="project">
+                    <div class="project-image">
+                    <img src="./images/img (4).jpg" alt="appinterface" class="port-img">
+                        <div class="project-image-caption">
+                            <p>
+                                14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
+                                Cloud Storage App
+                            </p>
+                        </div>
+                    </div>
+                    <div class="project-caption">
+                        <h3>Banking App Interface Concep</h3>
+                        <p>App</p>
+                    </div>
+                </li>
+                <li class="project">
+                        <div class="project-image">
                             <img src="./images/img (5).jpg" alt="qrcode" class="port-img">
-                            <div class="project-img-caption">
+                            <div class="project-image-caption">
                                 <p>
                                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                     Cloud Storage App
@@ -94,10 +153,10 @@
                             <p>Marketing</p>
                         </div>
                     </li>
-                    <li class="project-portfolio">
-                        <div class="project-img">
+                    <li class="project">
+                        <div class="project-image">
                             <img src="./images/img (6).jpg" alt="laptopandmobile" class="port-img">
-                            <div class="project-img-caption">
+                            <div class="project-image-caption">
                                 <p>
                                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                     Cloud Storage App
@@ -109,10 +168,10 @@
                             <p>App</p>
                         </div>
                     </li>
-                    <li class="project-portfolio">
-                        <div class="project-img">
+                    <li class="project">
+                        <div class="project-image">
                             <img src="./images/img (7).jpg" alt="steeringwheel" class="port-img">
-                            <div class="project-img-caption">
+                            <div class="project-image-caption">
                                 <p>
                                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                     Cloud Storage App
@@ -124,10 +183,10 @@
                             <p>Marketing</p>
                         </div>
                     </li>
-                    <li class="project-portfolio">
-                        <div class="project-img">   
+                    <li class="project">
+                        <div class="project-image">   
                             <img src="./images/img (8).jpg" alt="mobilewallpaper" class="port-img">
-                            <div class="project-img-caption">
+                            <div class="project-image-caption">
                                 <p>
                                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                     Cloud Storage App
@@ -139,10 +198,10 @@
                             <p>Design</p>
                         </div>
                     </li>
-                    <li class="project-portfolio">
-                        <div class="project-img">
+                    <li class="project">
+                        <div class="project-image">
                             <img src="./images/img (9).jpg" alt="orangegirl" class="port-img">
-                            <div class="project-img-caption">
+                            <div class="project-image-caption">
                                 <p>
                                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                     Cloud Storage App
@@ -154,10 +213,10 @@
                             <p>Marketing</p>
                         </div>
                     </li>
-                    <li class="project-portfolio">
-                        <div class="project-img">
+                    <li class="project">
+                        <div class="project-image">
                             <img src="./images/img (10).jpg" alt="igstories" class="port-img">
-                            <div class="project-img-caption">
+                            <div class="project-image-caption">
                                 <p>
                                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                     Cloud Storage App
@@ -169,10 +228,10 @@
                             <p>Design</p>
                         </div>
                     </li>
-                    <li class="project-portfolio">
-                        <div class="project-img">
+                    <li class="project">
+                        <div class="project-image">
                             <img src="./images/img (11).jpg" alt="groceries" class="port-img">
-                            <div class="project-img-caption">
+                            <div class="project-image-caption">
                                 <p>
                                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                     Cloud Storage App
@@ -185,10 +244,10 @@
                             <p>Web Site</p>
                         </div>
                     </li>
-                    <li class="project-portfolio">
-                        <div class="project-img">
+                    <li class="project">
+                        <div class="project-image">
                             <img src="./images/img (12).jpg" alt="coffee" class="port-img">
-                            <div class="project-img-caption">
+                            <div class="project-image-caption">
                                 <p>
                                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                     Cloud Storage App
@@ -200,53 +259,52 @@
                             <p>Web Site</p>
                         </div>
                     </li>
-                </ul>
-
-            </div>
-
-        </section>
-
-    </main>
-
-    <!--start of footer tag-->
-    <footer class="container footer">
-        <section class="footer-section">
-            <div class="foot margin">
-                <a class="footer-logo links" href="http://github.com/webstudio-is"><span>WEB</span>STUDIO</a>
-                <p class="footer-details">Increase the flow of customers and <br> sales for your business with
-                    digital<br>marketing & growth solutions.
+            </ul>
+        </div>
+    </section>
+</main>
+<footer class="bg-dark footer d-flex">
+    <div class="container">
+        <div class="footer-inner">
+            <div>
+                <a href="#" class="logo link"> <span class="logo-web">Web</span><span
+                        class="logo-studio-footer">studio</span> </a>
+                <p class="footer-text">
+                    Increase the flow of customers and <br />
+                    sales for your business with digital<br />
+                    marketing & growth solutions.
                 </p>
             </div>
-            <div class="footer-icon">
-                <a class="footer-details">Social media</a>
-                <div class="footer-icons">
-                    <a class="footerlist-icon">
+            <div class="footer-social">
+                <p class="footer-social-text">Social Media</p>
+                <div class="d-flex">
+                    <a class="team-socials-icon">
                         <svg width="16" height="16">
                             <use href="./images/icons.svg#instagram-2"></use>
                         </svg>
                     </a>
-                    <a class="footerlist-icon">
+                    <a class="team-socials-icon">
                         <svg width="16" height="16">
                             <use href="./images/icons.svg#twitter-1"></use>
                         </svg>
                     </a>
-                    <a class="footerlist-icon">
-                        <svg width="16" height="16">
-                            <use href="./images/icons.svg#facebook-1"></use>
-                        </svg>
-                    </a>
-                    <a class="footerlist-icon">
+                    <a class="team-socials-icon">
                         <svg width="16" height="16">
                             <use href="./images/icons.svg#linkedin-1"></use>
                         </svg>
                     </a>
+                    <a class="team-socials-icon">
+                        <svg width="16" height="16">
+                            <use href="./images/icons.svg#facebook"></use>
+                        </svg>
+                    </a>
                 </div>
             </div>
-            <div class="email-footer-port">
-                <p class="subs-footer">Subscribe</p>
+            <div class="footer-sub">
+                <p class="footer-subscribe-text">Subscribe</p>
                 <form>
-                    <input type="text" placeholder="Email" class="subs-input">
-                    <button type="button" class="email-btn">
+                    <input type="text" placeholder="Email" class="input-sub" />
+                    <button class="btn-sub">
                         Subscribe
                         <svg width="24" height="24">
                             <use href="./images/icons.svg#send"></use>
@@ -254,12 +312,14 @@
                     </button>
                 </form>
             </div>
-        </section>
-    </footer>
-    <!--end of footer tag-->
-    
-    </body>
-    
-    
-    
-    </html>
+        </div>
+    </div>
+</footer>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+<script type="text/javascript" src="./js/mobile-menu.js"></script>
+</body>
+
+</html>
+

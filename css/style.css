@@ -605,6 +605,7 @@ body {
     .portbutton {
         align-items: flex-start;
     }
+         
 }
 
 @media (min-width: 768px) {
@@ -662,7 +663,17 @@ body {
     .about-icon {
         display: none; 
     }
-    
+         .about-item h3 {
+             font-size: 36px;
+             margin-bottom: 8px;
+         }
+                 .footer-inner {
+                     justify-content: space-around;
+                 }
+
+        .about-item p {
+            margin-top: 0;
+        }
 }
 
 @media (max-width: 767px) {

@@ -634,6 +634,8 @@ body {
         width: 264px;
         margin-right: 24px;
     }
+
+      
 }
 @media (min-width: 1200px) {
     .desktop-contacts {
@@ -650,6 +652,17 @@ body {
     .customer-icon, .portbutton {
         flex-basis: calc(100% / 6 - 30px);
     }
+         
+}
+@media (max-width:1199px ) {
+    .what-we-do {
+        display: none;
+    }
+    
+    .about-icon {
+        display: none; 
+    }
+    
 }
 
 @media (max-width: 767px) {
